@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    color: #0077b6;
+    font-size: clamp(0.25rem, calc(0.5rem + 1vw), 1rem);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    border-bottom: 2px solid #000;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header>div {
+    font-size: calc(0.75rem + 1.25vw);
+    font-weight: bold;
+    margin-inline: 20px;
+}
+
+header>div>sub {
+    font-size: calc(0.35rem + 1vw);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    background-color: #fff;
+}
+
+.center {
+    width: max(300px, 70%);
+    margin: 0 auto;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px 30px;
+    justify-items: center;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.title {
+    font-size: clamp(1rem, calc(0.75rem + 1.25vw), 1.5rem);
+    font-weight: bold;
+}
+
+.image {
+    width: clamp(4rem, calc(4rem + 20vw), 8rem);
+    font-size: clamp(4rem, calc(4rem + 20vw), 8rem);
+    margin: 20px;
+}
+
+.right {
+    width: 70%;
+    text-align: center;
+}
+
+.right > * {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: clamp(0.25rem, calc(0.5rem + 1vw), 1rem);
+}
